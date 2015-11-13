@@ -1,0 +1,386 @@
+
+
+/*  Login 页
+ ********************************/
+
+//MNLoginViewCtrl.m
+
+"请输入邮箱账号" = "Pls. enter your email ";
+
+"密码" = "Password";
+
+"登陆" = "Log in";
+
+"忘记密码?" = "Forgot password?";
+
+"新用户?" = "New user?";
+
+"忘记密码" = "Forgot password";
+
+"注册" = "Sign up";
+
+//MNUserService.m
+
+"邮箱或密码没输入，请重试" = "E-mail or password is not entered, please try again";
+
+"邮箱无效，请重新输入" = "Invalid email-box,Try again.";
+
+"登陆成功" = "Login successful";
+
+"网络超时" = "Network timeout";
+
+"密码由6-16位数字、字母组成，不可包含空格和特殊字符" = "Password from 6-16 digits, letters, can not contain spaces and special characters";
+
+"注册成功" = "SignUp successful";
+
+"缓存邮箱为空" = "The cache mailbox is empty";
+
+"缓存密码为空" = "The cache password is empty";
+
+"自动登录成功" = "Automatic login successful";
+
+"当前是未登录状态" = "The current is not login";
+
+"注销成功" = "Log out successful";
+
+"昵称为空" = "The nickname is empty";
+
+"上传用户信息成功" = "Upload profile successfully";
+
+//MNRegisterViewCtrl.m
+
+"邮箱" = "Email";
+
+"点击提交即表示同意我们的用户协议" = "Submit you agree to our User Agreement";
+
+"服务协议" = "Service Protocol";
+
+"提交" = "Submit";
+
+//MNPwdResetSuccessViewCtrl.m
+
+"我们已经给您的邮箱发送了一份重置密码的邮件" = "We've given your mailbox to send a reset password email.";
+
+"1.24小时有效" = "1.24-hour valid.";
+
+"2.如果您没有收到，请检查您的垃圾邮箱或者是过滤器" = "2.If you have not received, please check your Junk mailbox or filter.";
+
+//MNProtocolViewCtrl.m
+
+"服务协议内容" = "Service Agreements \n\n Movnow seriously reminds users that reading this agreement carefully, fully understanding this agreement, and please pay more attention to those clauses about Movnow liability exemption and users’ restriction rights. Please read carefully and choose to accept or not accept this agreement (underages should read under the supervision of legal guardian). Users cannot register or login unless you accept all the clauses of this agreement. If you register or login or use Movnow which indicates you accept the restriction of all the clauses.   The agreement is concluded between Movnow and users about registration, login, and using. This agreement includes Movnow and users’ rights and duties. Users mean persons or organizations that register or login or use or browse this service. You accept this agreement means you accept the restriction of all the clauses, including Movnow may modify any clause of this agreement. Movnow can update this agreement anytime; the updated clauses will replace the old clauses after publishing, users can check the newest clauses in our website without specially notifying. After Movnow modifying the clauses, if users donot accept the modified clauses, please stop using the service providing by Movnow, if users continue using the service which indicates that you accept the modified clauses.\n\n Service Regulations\n\n 1. Users should understand and agree that Movnow just provides a platform for sharing, transmitting or obtaining information, users should take responsibility for all the activities in their registered accounts, including the contents you send and the results. Users should judge the contents of Movnow by themselves, and be responsible for the risks due to the using contents, including the risks depend on the correctness, completeness or availability of the contents. Movnow won’t be responsible for users’ activities which result loss or damage.\n 2. Movnow won’t be responsible for the contents that users send in the service and the contents donot reflect the Movnow’s viewpoint and policy.\n3. Users should be fully responsible for the truthfulness, legality, harmlessness, effectiveness of the sending contents, users bear all the legal responsibility of the information the users send.\n 4. Users should bear the risks that because of Movnow’s business development that Movnow modifies, suspends, restricts, or stops the service without notifying\n 5. Users cannot make, upload, copy, and send the following contents in Movnow website.\n(1) Contents against the constitutional provisions;\n(2) Contents that endanger national security, divulge the state secrets, subvert the state power, and separate the state unification;\n(3) Contents that damage the honors and interests of the state;\n(4) Contents that incite ethnic hatred and discrimination, and contents undermine ethnic unity;\n(5) Contents that break the religious policies of the state, and contents that propagandize heresy and feudal superstitions;\n(6) Contents that spread rumors, disturb the social order, and undermine the social stability;\n(7) Contents that spread obscenity, pornography, gambling, violence, murder, terror or abet offence;\n(8) Contents that insult or slander others, and impair the legal rights of others;\n (9) Contents that prohibit by laws and administrative regulations.\n 6. According to reasonable judgment, Movnow has rights to stop sending contents that against laws and this agreement, or contents that insult or slander others, and impair the legal rights of others. Movnow also has rights to take legal action to persons who against this clause, including but not limited to delete illegal, infringemental, improper contents or terminate the membership, or prevent using all or part of the Movnow service, or report to relevant department according to laws.\n 7. Users’ rights and duties\n (1) The system accounts ownership belongs to Movnow, after users applying for registering, then have the rights to use Movnow accounts, the using rights belongs to the first applying person, forbidding bestow, borrow, rent, transmit or sell.\n (2) Users have rights to modify and delete personal information, registering information and transmitting contents, but pay attention to that delete the above contents may also result deleting the characters and pictures in the system. Users should be responsible for the risk.\n (3) Users should be responsible for safekeeping the registered accounts information and accounts password security. Users should bear legal liability for activities under registered accounts and passwords. Users agree that they won’t use others’ accounts and passwords. If users doubt others using their own accounts and passwords, please notify Movnow at once.\n(4) Users must comply with all the clauses in this agreement, and use the service correctly and properly, if users violate any clauses of the agreement, Movnow has rights to terminate providing service for them, meantime, Movnow retains the rights to take back the accounts and passwords.\n (5) If users donot login the account for a long time, Movnow has rights to take back the accounts avoiding resource wasting. Users bear all the problems themselves.\n\n Privacy Protection\n\n 1. Users should understand and agree that Movnow just provides a platform for sharing, transmitting or obtaining information, users should take responsibility for all the activities in his registered accounts, including the contents you send and the results. Users should judge the contents of Movnow by themselves, and be responsible for the risks due to the using contents, including the risks depend on the correctness, completeness or availability of the contents. Movnow won’t be responsible for users’ activities which result loss or damage.\n Personal privacy information means that information can help personal identification and provide personal communication ways, including the following information: users’ real name, ID No., mobile phone number, IP address. Non-personal privacy information includes the basic recording information and other normal information except all the personal privacy information, which reflects in Movnow server end definitely and objectively, such as the users’ operation status and use habits. Non-personal privacy information also includes the above mentioned privacy information that the users agree to public.\n 2. If users violate this agreement or relevant service clauses, which result claims, demands, or damages from the third party, including reasonable attorney fees, users agree to compensate for the loss of Movnow and its cooperative corporation or relevant corporation, so avoiding corporations’ loss.\n\n Legal Liability and Liability Exemption\n\n 1.If users violate this agreement or relevant service clauses, which result claims, demands, or damages from the third party, including reasonable attorney fees, users agree to compensate for the loss of Movnow and cooperative corporation or relevant corporation, so avoiding corporations’ loss.\n 2. Because of the third party such as telecom department that communication line breakdown, technical problems, network, PC problems, unstable system and other force majeure, which cause damage, Movnow and its cooperative corporation won’t bear the responsibility.\n 3. If technical problems and other force majeure influent the system’s normal operation, Movnow and its cooperative corporation will deal with and repair at once, but donot be responsible for the users’ loss.\n 4. Users must understand that the service involves the Internet, so that may existed instability. Users need to bear this risk, For example, computer virus, hacker attack, system instability, location of the user, user power off the service, Internet problems, communication line problems and other technical problems, which cause the service break off.\n 5. Users must understand that as using the service, which may includes some threatening, scandalous, disgusting, illegal information or activities, or invade the rights of others (including intellectual property rights), users should bear this risk. Movnow and its cooperative company won’t guarantee anything. Whether explicit or implicit, whether the information real or not, whether the information suitable for a particular purpose or not, whether invade the rights of others or not, because of users’ improper or illegal using , which cause damage directly, indirectly or casually, Movnow won’t be responsible for that.\n 6. The defined information of Movnow is that, characters, software, voice, pictures, videos, diagrams, and all the contents in ads. The business information provided by Movnow is protected by copyrights, trademark rights, and other intellectual rights and laws. So users can use these contents under the authorization of Movnow and advertising agency, while cannot copy, modify, compile these contents or create some derivatives.\n 7. In any case, Movnow won’t be responsible for any indirect, casual, special, criminal, and punitive damage.\n 8. Movnow seriously reminds users that pay more attention to this agreement about Movnow’s liability exemption and users’ duties. Users please read carefully and think about the risk. Underages should read this agreement under the supervision of legal guardians. The final explanation and revision rights of the above clauses belong to Movnow.\n\n The Other Clauses\n\n 1. Movnow seriously reminds users that pay more attention to this agreement about Movnow’s liability exemption and users’ duties. Users please read carefully and think about the risk. Underages should read this agreement under the supervision of legal guardians. The final explanation and revision rights of the above terms belong to Movnow.\n 2. Some or all of the terms are invalid, it won’t influent other terms’ effectiveness.\n 3. The agreement is concluded in Shenzhen. The explanation and effectiveness and disputes solution apply to PRA laws. If users and Movnow meet any disputes, both should settle friendly.\n 4. The copyrights of this agreement belong to Movnow with explanation and revision rights.\n 5. If you have any advice to this service, please check our website: www.Movnow.com.";
+
+//  Main  remind
+//  MNBMIViewCtrl.m
+
+"测试" = "Test";
+
+"体质指数" = "BMI";
+
+"偏瘦" = "Thinnish";
+
+"正常" = "Normal";
+
+"偏重" = "The heavier";
+
+"肥胖" = "Fat";
+
+"BMI偏瘦" = "Thinnish can increases the risk of diseases such as anemia, blood in the urine.Need maintain balanced nutrition in the diet.\n 1. Meal quantity is not reduced but increase heat. Such as when eating bread, peanut butter coating, soup and egg drop, and so on.\n 2. Have many meals but little food at each with regular snacks. Except for meals outside the main meal, before lunch, before going to bed, and even in the afternoon, and limit the consumption of nutrient-rich snacks and beverages, including milk, soy milk.\n 3. What is high nutrition snacks ? Banana milk pudding, peanut butter sandwiches, fresh fruit and cheese.\n 4. What are the nutritional drinks? Banana milk shakes, chocolate milk, calcium-fortified soy milk.\n 5. Moderate exercise, enough sleep and good mood.";
+
+"BMI适中" = "Your body mass index at a moderate level, but the moderate body mass index weight is not necessarily the same as the best state of health, so in the state of maintaining your weight,meanwhile  you should have a balanced diet, regular exercise, and adopt a healthy lifestyle. \n\n\n\n\n\n\n\n\n\n\n";
+
+"BMI偏胖" = "According to the standard, your body mass index is higher than the moderate level while suffering from obesity-related diseases (such as diabetes, cardiovascular disease) relative increase in risk.\n To prevent above health issue, we recommend that you increase the amount of physical activity,  change sedentary lifestyle, and avoid food with high fat, high sugar and high-calorie foods.\n Contact your doctor and dietitian for exercise program and diet that suits your needs.\n\n\n\n\n\n";
+
+"BMI肥胖" = "Your body mass index is now obese.\n Obesity is a major risk factor for chronic diseases such as diabetes, cardiovascular disease, arthritis and certain cancers.\n You should have enough exercise, to ensure that a balanced diet and calorie intake, try to balance calorie intake and consumption.\n Seek opinions from doctors and nutritionists, to discuss practical weight control goals established. \n\n\n\n\n\n\n";
+
+
+//  MNBMITest.m
+
+"你的性别？" = "Select your gender";
+
+"你几岁？" = "Select your age";
+
+"你有多高？" = "Select your height";
+
+"你有多重？" = "Select your weight";
+
+//MNDrk_GetupViewCtrl.m
+
+"返回" = "Back";
+
+"日" = "Sun";
+
+"一" = "Mon";
+
+"二" = "Tue";
+
+"三" = "Wed";
+
+"四" = "Thu";
+
+"五" = "Fri";
+
+"六" = "Sat";
+
+"您确定删除该喝水提醒吗？" = "Are you sure to delete this drink water alarm ? ";
+
+"您确定删除该起床提醒吗？" = "Are you sure to delete this wakeup alarm ? ";
+
+"同步提醒失败" = "Synchronous remind failure";
+
+//  MNEditOrAddViewCtrl.m
+
+"保存" = "Save";
+
+"添加一个喝水提醒" = "Add a drinking water alarm";
+
+"添加一个起床闹钟" = "Add a clock alarm";
+
+"编辑喝水提醒" = "Edit drinking water alarm";
+
+"编辑起床闹钟" = "Edit wakeup call";
+
+"喝水起床后" = "You'd better drink warm water or warm honey water after getting up, which helps improve aperient bowel function and lower blood viscosity. And it is recommended to have breakfast 30 minutes after drinking water , which would be helpful to kindey and liver detoxification.";
+
+"喝水上班前" = "Drinking water before work would relieve the water shortage of body , adjust mood and pressure, improve cognitive ability, and clear your mind.";
+
+"喝水上午上班时" = "Drinking water at work in the morning would help replenish the lost fluids and relax the intensive emotion at work.";
+
+"喝水饭前半小时" = "Drinking water 30 Mins before lunch not only reinforces your digestion but also helps keep fit compared to made-up drinks.(except people with gastric ulcer disease)";
+
+"喝水下午上班时" = "Taking a cup of green tea in the afternoon at work would help clear your mind and help prevent radiation.";
+
+"喝水下班前或者吃饭前半小时" = "Drinking water 30 Mins before offwork or dinner would make you feel full to avoid overeating, and adjusts salt concentration to avoid thirsty of body, helping loss weight and keep fit";
+
+"喝水洗澡后" = "Drinking a cup of warm water slowly after taking a bath,  before/after doing exercise would help reduce heart burden. And recommended is to keep the drinking speed and frequency close to heart rate so that the heart can absorb the water well.";
+
+"喝水睡觉前半小时" = "Drinking water 30 Mins before sleeping would help dilute the blood, accelerate blood circulation, and against insomnia, but not drinking too much to going to toilet at night.";
+
+"喝水小知识" = "Note: People with heart disease, hypertension, renal insufficiency and renal failure shouldn’t drink lots of water at one time to get rid of unnecessary damage.";
+
+"提醒队列中以有该时间，请选择其他时间。" = "The time has been on the list, please choose other time.";
+
+"该喝水了" = "It's time to Drink water";
+
+"该起床了" = "It's time to Wakeup";
+
+"打开" = "Open";
+
+//  MNSedentaryViewCtrl.m
+
+//  MNSelectedTimeSectionVC.m
+
+"开始时间与结束时间一致，请重新选择。" = "StartTime is same as  EndTime，Pls. reselect";
+
+"开始时间在结束时间之后，请重新选择。" = "StartTime is later than EndTime，Pls. reselect";
+
+//  MNDeviceMainViewCtrl.m
+
+"喝水提醒" = "Drink alarm";
+
+"起床提醒" = "Wakeup call";
+
+"体质指数" = "BMI";
+
+"久坐提醒" = "Sitting alarm";
+
+"个人信息" = "Profile";
+
+"周日" = "Sun";
+
+"周一" = "Mon";
+
+"周二" = "Tue";
+
+"周三" = "Wed";
+
+"周四" = "Thu";
+
+"周五" = "Fri";
+
+"周六" = "Sat";
+
+"您还没绑定设备" = "You haven't bound device yet,\n Please bind first.";
+
+"历史记录" = "Historical";
+
+"蓝牙连接已断开" = "Bluetooth has been disconnected,\n Please reconnection";
+
+//  MNDeviceBindingViewCtrl.m
+
+"如果需要匹配您的设备\n请务必点击匹配，否则无法使用" = "when you use the app,\n pls make the app pari your device， click 'Pari' to use";
+
+"暂不绑定" = "First not binding";
+
+"暂不升级" = "Temporarily do not upgrade";
+
+"请打开蓝牙" = "Please open the bluetooth";
+
+"正在绑定\n\n该过程大概需要10-40秒\n\n请耐心等候" = "Is binding \n \n the process takes about 10 to 40 seconds \n please wait patiently";
+
+"无法绑定\n\n请确保身边存在手环，且手环电量充足\n\n点击屏幕中央重新绑定" = "No se puede emparejar,\n  asegúrese de tener el Fit-Track encendido.\n Haga click en el centro de la pantalla para emparejar.";
+
+"已搜索到设备，\n请晃动设备或按键确认" = "When the screen lights up，Tap the button .\n\n If the bracelet is not yours , click";
+
+"不用升级,已经是最新固件版本" = "Su versión de firmware está actualizada";
+
+//  MNSettingListViewCtrl.m
+
+"我的设备" = "My Device";
+
+"当前无绑定的设备" = "No binding device now";
+
+"我的目标" = "My Goal";
+
+"活动类型" = "Activity Type";
+
+"设置" = "Setting";
+
+//  MNMyDeviceViewCtrl.m
+
+"解绑" = "Unbind";
+
+"蓝色" = "Blue";
+
+"橙色" = "Orange";
+
+"绿色" = "Green";
+
+"红色" = "Red";
+
+"您确定解绑该设备吗?" = "Are you sure to unbind the account?";
+
+"电量" = "Battery";
+
+"固件升级" = "Firmware Updating";
+
+"指示灯颜色" = "Light Color";
+
+"防丢" = "Anti-Lost";
+
+"来电提醒" = "Calls To Remind";
+
+"咔擦拍拍拍" = "Burst Shot";
+
+"查找设备" = "Search Device";
+
+//  MNPhotoGraphViewCtrl.m
+
+"请按击设备一下,假装打电话,别被发现" = "Tap the device , pretend to make a call";
+
+"操作超时" = "Time out";
+
+//  MNMovementTargetViewCtrl.m
+
+"设置每天想要实现的目标" = "Set daily want to achieve";
+
+"当前情况" = "Current condition";
+
+"减肥牛人" = "Fat-loser";
+
+"活跃分子" = "Activist";
+
+"普普通通" = "Normal";
+
+"步" = "steps";
+
+//  MNActivityTypeViewCtrl.m
+
+"默认" = "Default";
+
+"步行" = "Walk";
+
+"睡眠" = "Sleep";
+
+"骑车(自动切回活动模式)" = "Cycling (automatic cut back to the active mode)";
+
+"自动切换" = "Automatic switching";
+
+"敲击三下设备或按击两下设备" = "Striking the three equipment or click two equipment";
+
+//  MNSystemSettingViewCtrl.m
+
+"注销" = "Log out";
+
+"功能介绍" = "Instructions";
+
+"您确定注销当前账号吗?" = "Are you sure the account logout ?";
+
+"英制" = "Imperial";
+
+"引导页" = "Intros";
+
+"软件版本" = "Version";
+
+//  MNFunctionIntroduceViewCtrl.m
+
+"带着设备活动、睡眠，在手机上查看活动状况、睡眠情况。" = "With bracelet, view the status of Activities an Sleep on the smart phone";
+
+"在手机上设置喝水、久坐、闹钟提醒，设备到达设置事件点时，会给您提醒。" = "Setting drinking, sedentary, alam clock reminder on APP,  bracelet will remind you when reach the setting time.";
+
+"当手机来电、短信时，手环在您手边时，会给您震动提醒。" = "When the phone calls, text messages, bracelet is in your hand, give you a vibrating alert.";
+
+//  MNUserInfoViewCtrl.m
+
+"当前照相机不可用" = "当前照相机不可用";
+
+"头像地址正在申请中" = "头像地址正在申请中";
+
+"编辑" = "Edit";
+
+"年龄:" = "Age:";
+
+"体重:" = "Weight:";
+
+"身高:" = "Height:";
+
+"昵称不能为空" = "The nickname is empty";
+
+//  MNAdaptAlertView.m
+
+"提醒" = "Alarm";
+
+"确定" = "Yes";
+
+"取消" = "Cancel";
+
+"分享到" = "Share to";
+
+//  MNWeekPicker.m
+
+"请选择重复周期" = "Please select repeated date";
+
+//  MNIconChoosePopView.m
+
+"拍照" = "Take photo";
+
+"选择本地照片" = "Choose the local photo";
+
+//  MNCameraSettingView.m
+
+"连拍次数" = "fps times";
+
+"连拍间隔" = "fps intervals";
+
+//  MNMainMovementView.m
+
+"里程" = "Distance";
+
+"卡路里" = "K Cal";
+
+"步数" = "steps";
+
+"分享" = "Share";
+
+"卡路里管理" = "K cal management";
+
+//  MNMainSleepView.m
+
+"深睡时长" = "Deep sleep duration";
+
+"浅睡时长" = "Light sleep duration";
+
+"深睡" = "Deep sleep";
+
+"浅睡" = "Light sleep";
+
+"睡眠时长" = "Sleep duration";

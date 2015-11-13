@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E4CE0DFB-14DB-45CC-9C5E-C0EF3B7276AD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Movnow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30cf6b99-f5ba-cc44-a6e9-576c85ac67b8++8779</key>
+		<string>https://192.168.0.36/svn/wkl_ios_rep/Q3/trunk/Movnow</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Movnow.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30cf6b99-f5ba-cc44-a6e9-576c85ac67b8++8779</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>30cf6b99-f5ba-cc44-a6e9-576c85ac67b8++8779</key>
+		<string>https://192.168.0.36/svn/wkl_ios_rep</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.0.36/svn/wkl_ios_rep/Q3/trunk/Movnow/Movnow.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30cf6b99-f5ba-cc44-a6e9-576c85ac67b8++8779</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30cf6b99-f5ba-cc44-a6e9-576c85ac67b8++8779</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Movnow</string>
+		</dict>
+	</array>
+</dict>
+</plist>

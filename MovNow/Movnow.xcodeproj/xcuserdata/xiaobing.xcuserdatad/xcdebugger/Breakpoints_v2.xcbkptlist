@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Src/Core/Service/MNUserService.m"
+            timestampString = "452771326.354139"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "-loginWithEmail:passWord:success:failure:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Src/UI/Controller/Login/MNRegisterViewCtrl.m"
+            timestampString = "452776015.604481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-rightBarItemPress:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MNRegisterViewCtrl rightBarItemPress:]"
+                  moduleName = "Movnow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaobing/Desktop/%E5%B7%A5%E7%A8%8B/Movnow3/Src/UI/Controller/Login/MNRegisterViewCtrl.m"
+                  timestampString = "452776204.95928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "66">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[MNRegisterViewCtrl rightBarItemPress:]_block_invoke"
+                  moduleName = "Movnow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaobing/Desktop/%E5%B7%A5%E7%A8%8B/Movnow3/Src/UI/Controller/Login/MNRegisterViewCtrl.m"
+                  timestampString = "452776204.959421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Src/UI/Controller/Login/MNLoginViewCtrl.m"
+            timestampString = "452776128.759377"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "-registerBtnClick:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MNLoginViewCtrl registerBtnClick:]"
+                  moduleName = "Movnow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaobing/Desktop/%E5%B7%A5%E7%A8%8B/Movnow3/Src/UI/Controller/Login/MNLoginViewCtrl.m"
+                  timestampString = "452776204.981315"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "382">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[MNLoginViewCtrl registerBtnClick:]_block_invoke"
+                  moduleName = "Movnow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xiaobing/Desktop/%E5%B7%A5%E7%A8%8B/Movnow3/Src/UI/Controller/Login/MNLoginViewCtrl.m"
+                  timestampString = "452776204.981479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Src/UI/Controller/Login/MNRegisterViewCtrl.m"
+            timestampString = "452776152.492987"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-rightBarItemPress:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

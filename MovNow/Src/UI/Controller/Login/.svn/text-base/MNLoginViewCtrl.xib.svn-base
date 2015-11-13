@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MNLoginViewCtrl">
+            <connections>
+                <outlet property="LBgImageView" destination="1n0-2b-ZGe" id="KYp-gL-xNo"/>
+                <outlet property="LEditViewBottomSpace" destination="WP3-cp-Gcb" id="QT4-RS-QyC"/>
+                <outlet property="LEmailIconView" destination="g22-x5-4cr" id="CeF-3S-Ue8"/>
+                <outlet property="LEmailTF" destination="Y8D-6L-WNR" id="4YD-iz-vGS"/>
+                <outlet property="LForgetPwdBtn" destination="Dwv-Lc-OmP" id="u96-98-On5"/>
+                <outlet property="LLoginBtn" destination="vsz-Q3-zR5" id="Ljr-bN-xct"/>
+                <outlet property="LPwdIconView" destination="rKP-o8-6N5" id="RIv-gr-6Mq"/>
+                <outlet property="LPwdTF" destination="54E-tr-zQg" id="9rv-j3-hfu"/>
+                <outlet property="LRegisterBtn" destination="uFT-b8-YHZ" id="Xse-xl-cxR"/>
+                <outlet property="view" destination="PqH-l7-l9E" id="zdg-ir-cUN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PqH-l7-l9E">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1n0-2b-ZGe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="IU6-on-eW4" appends="YES" id="yzZ-Lw-MgW"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EeG-NL-t43">
+                    <rect key="frame" x="0.0" y="328" width="320" height="220"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g22-x5-4cr">
+                            <rect key="frame" x="15" y="0.0" width="45" height="45"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKP-o8-6N5">
+                            <rect key="frame" x="15" y="55" width="45" height="45"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱账号" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="13" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y8D-6L-WNR">
+                            <rect key="frame" x="15" y="0.0" width="290" height="45"/>
+                            <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="kpD-af-30K"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="54E-tr-zQg">
+                            <rect key="frame" x="15" y="55" width="290" height="45"/>
+                            <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FLX-Xp-Bmn"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZS-9W-pcV" userLabel="Line1">
+                            <rect key="frame" x="15" y="44" width="290" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ie0-HP-jRX" userLabel="Line2">
+                            <rect key="frame" x="15" y="99" width="290" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-Q3-zR5">
+                            <rect key="frame" x="15" y="120" width="290" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="登 录"/>
+                            <connections>
+                                <action selector="loginBtnClick:" destination="-1" eventType="touchUpInside" id="xOo-hh-MnH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwv-Lc-OmP">
+                            <rect key="frame" x="15" y="190" width="110" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                            <state key="normal" title="忘记密码?">
+                                <color key="titleColor" red="0.090196078430000007" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.090196078430000007" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="forgetPwdBtnClick:" destination="-1" eventType="touchUpInside" id="5qu-w9-Euk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFT-b8-YHZ">
+                            <rect key="frame" x="215" y="190" width="90" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <state key="normal" title="新用户?">
+                                <color key="titleColor" red="0.090196078431372548" green="0.23921568627450981" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.090196078430000007" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="registerBtnClick:" destination="-1" eventType="touchUpInside" id="UmL-qu-aDL"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-R4-eAl" userLabel="Line3">
+                            <rect key="frame" x="15" y="209" width="95" height="1"/>
+                            <color key="backgroundColor" red="0.090196078430000007" green="0.23921568630000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uoc-Ch-Rlr" userLabel="Line4">
+                            <rect key="frame" x="235" y="209" width="65" height="1"/>
+                            <color key="backgroundColor" red="0.090196078431372548" green="0.23921568627450981" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="eix-XY-sni"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EeG-NL-t43" secondAttribute="bottom" constant="20" id="WP3-cp-Gcb"/>
+                <constraint firstItem="1n0-2b-ZGe" firstAttribute="leading" secondItem="PqH-l7-l9E" secondAttribute="leading" id="dAF-2A-XXv"/>
+                <constraint firstItem="EeG-NL-t43" firstAttribute="leading" secondItem="PqH-l7-l9E" secondAttribute="leading" id="gjJ-Fn-ycQ"/>
+                <constraint firstAttribute="trailing" secondItem="EeG-NL-t43" secondAttribute="trailing" id="lK3-Lv-P0a"/>
+                <constraint firstAttribute="bottom" secondItem="1n0-2b-ZGe" secondAttribute="bottom" id="rxQ-E8-QG6"/>
+                <constraint firstAttribute="trailing" secondItem="1n0-2b-ZGe" secondAttribute="trailing" id="tvh-8x-MWI"/>
+                <constraint firstItem="1n0-2b-ZGe" firstAttribute="top" secondItem="PqH-l7-l9E" secondAttribute="top" id="uJM-nj-ZIs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="455" y="422"/>
+        </view>
+        <tapGestureRecognizer id="IU6-on-eW4">
+            <connections>
+                <action selector="clickToBgImageView:" destination="-1" id="ont-PX-1bW"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

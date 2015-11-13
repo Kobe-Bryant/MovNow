@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sjf-OD-gmq" customClass="MNIconChoosePopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOj-lu-wBb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="LwE-09-eIh" appends="YES" id="U6P-Vg-VBQ"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-yI-SKO">
+                    <rect key="frame" x="0.0" y="504" width="320" height="300"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-jK-opC" customClass="MNBaseIconView">
+                            <rect key="frame" x="120" y="30" width="80" height="80"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlM-tj-dXi">
+                            <rect key="frame" x="35" y="140" width="250" height="35"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="拍照">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cameraBtnClick:" destination="sjf-OD-gmq" eventType="touchUpInside" id="y5i-4p-XeU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLA-YA-msc">
+                            <rect key="frame" x="35" y="185" width="250" height="35"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="选择本地照片">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="photoAlbumBtnClick:" destination="sjf-OD-gmq" eventType="touchUpInside" id="A6m-lB-5Vw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDR-D1-idS">
+                            <rect key="frame" x="35" y="230" width="250" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnClick:" destination="sjf-OD-gmq" eventType="touchUpInside" id="8JB-jY-cbR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="wLd-if-mbS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6hc-yI-SKO" secondAttribute="trailing" id="0XM-00-ZFQ"/>
+                <constraint firstItem="OOj-lu-wBb" firstAttribute="top" secondItem="sjf-OD-gmq" secondAttribute="top" id="47C-ys-b8r"/>
+                <constraint firstAttribute="trailing" secondItem="OOj-lu-wBb" secondAttribute="trailing" id="EeD-y6-1cl"/>
+                <constraint firstItem="6hc-yI-SKO" firstAttribute="leading" secondItem="sjf-OD-gmq" secondAttribute="leading" id="Zou-0n-wEr"/>
+                <constraint firstItem="OOj-lu-wBb" firstAttribute="leading" secondItem="sjf-OD-gmq" secondAttribute="leading" id="dTg-fn-pVE"/>
+                <constraint firstAttribute="bottom" secondItem="6hc-yI-SKO" secondAttribute="bottom" constant="-236" id="nkv-WG-2Or"/>
+                <constraint firstAttribute="bottom" secondItem="OOj-lu-wBb" secondAttribute="bottom" id="tzd-dh-EQg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="ICameraBtn" destination="zlM-tj-dXi" id="ZuD-l6-Ahp"/>
+                <outlet property="ICancelBtn" destination="wDR-D1-idS" id="ufI-Od-9HG"/>
+                <outlet property="IPhotoAlbumBtn" destination="LLA-YA-msc" id="ueV-yU-qEG"/>
+                <outlet property="bottomSpace" destination="nkv-WG-2Or" id="sWg-yU-loB"/>
+                <outlet property="iconView" destination="WKw-jK-opC" id="xyK-iV-Ni3"/>
+            </connections>
+            <point key="canvasLocation" x="1013" y="433"/>
+        </view>
+        <tapGestureRecognizer id="LwE-09-eIh">
+            <connections>
+                <action selector="clickToBgView:" destination="sjf-OD-gmq" id="uYC-KE-PD9"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

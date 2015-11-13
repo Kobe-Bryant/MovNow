@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MNRegisterViewCtrl">
+            <connections>
+                <outlet property="REmailBgView" destination="8kt-kt-g83" id="1vG-Ex-BAp"/>
+                <outlet property="REmailIconView" destination="dH8-1M-dtR" id="rlI-RO-ckw"/>
+                <outlet property="REmailTF" destination="lJQ-jY-Cyb" id="LhO-wD-hBp"/>
+                <outlet property="RProcotolBtn" destination="ZJx-RP-nCv" id="HKi-FP-nNf"/>
+                <outlet property="RPwdBgView" destination="BMl-PK-ZOW" id="a9D-9b-swd"/>
+                <outlet property="RPwdIconView" destination="G25-OM-DXD" id="Fcf-7s-PO4"/>
+                <outlet property="RPwdTF" destination="C2u-pf-rF2" id="RS6-qX-eK1"/>
+                <outlet property="view" destination="MTX-6u-e98" id="IiE-4x-Cga"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MTX-6u-e98">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXm-HV-v6y" userLabel="line">
+                    <rect key="frame" x="15" y="170" width="210" height="1"/>
+                    <color key="backgroundColor" red="0.42745098040000001" green="0.53333333329999999" blue="0.64313725489999995" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-RP-nCv">
+                    <rect key="frame" x="15" y="150" width="216" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="点击提交即表示同意我们的用户协议">
+                        <color key="titleColor" red="0.42745098040000001" green="0.53333333329999999" blue="0.64313725489999995" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="procotolBtnClick:" destination="-1" eventType="touchUpInside" id="sdy-eD-uS9"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kt-kt-g83" userLabel="bgView">
+                    <rect key="frame" x="15" y="30" width="290" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMl-PK-ZOW" userLabel="bgView">
+                    <rect key="frame" x="15" y="90" width="290" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-1M-dtR" userLabel="emailIcon">
+                    <rect key="frame" x="25" y="37" width="30" height="30"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G25-OM-DXD" userLabel="pwdIcon">
+                    <rect key="frame" x="25" y="97" width="30" height="30"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="C2u-pf-rF2">
+                    <rect key="frame" x="60" y="97" width="235" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9HI-xA-In5"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lJQ-jY-Cyb">
+                    <rect key="frame" x="60" y="37" width="235" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cXo-nU-exr"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="6uE-ni-Sij" appends="YES" id="8C5-9B-ZQg"/>
+            </connections>
+            <point key="canvasLocation" x="562" y="154"/>
+        </view>
+        <tapGestureRecognizer id="6uE-ni-Sij">
+            <connections>
+                <action selector="clickToBgView:" destination="-1" id="f5T-45-WAp"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

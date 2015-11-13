@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MNEditFoodViewCtrl">
+            <connections>
+                <outlet property="ECalorieBgImageView" destination="L4F-wL-a5b" id="9qq-tE-bCM"/>
+                <outlet property="ECalorieIcon1" destination="8M6-2Y-kQR" id="x2k-CF-7zM"/>
+                <outlet property="ECalorieIcon2" destination="6Tw-Eq-81M" id="Dgr-Yv-0K6"/>
+                <outlet property="ECalorieTF" destination="i0R-Jh-r8j" id="1aY-fy-xVU"/>
+                <outlet property="EFoodImageView" destination="la2-Vc-7qh" id="64S-dI-Icg"/>
+                <outlet property="ENameBgImageView" destination="zak-vb-736" id="mwy-NW-hCO"/>
+                <outlet property="ENameTF" destination="koy-9W-kPS" id="otd-LB-9RA"/>
+                <outlet property="view" destination="G2A-Cm-2xC" id="Ggk-GI-oE3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="G2A-Cm-2xC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="la2-Vc-7qh">
+                    <rect key="frame" x="80" y="70" width="160" height="160"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ICG-yJ-gjY" appends="YES" id="1m1-tj-kOB"/>
+                    </connections>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zak-vb-736">
+                    <rect key="frame" x="15" y="260" width="290" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-2Y-kQR">
+                    <rect key="frame" x="25" y="268" width="30" height="30"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入食物名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="koy-9W-kPS">
+                    <rect key="frame" x="60" y="268" width="235" height="30"/>
+                    <color key="textColor" red="0.44705882349999998" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="v40-2K-9Qt"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-wL-a5b">
+                    <rect key="frame" x="15" y="325" width="290" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Tw-Eq-81M">
+                    <rect key="frame" x="25" y="333" width="30" height="30"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入食物卡路里" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-Jh-r8j">
+                    <rect key="frame" x="60" y="333" width="235" height="30"/>
+                    <color key="textColor" red="0.44705882349999998" green="0.4941176471" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yDI-fR-6sF"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="YLe-hN-gWz" appends="YES" id="3eq-E6-1VT"/>
+            </connections>
+            <point key="canvasLocation" x="872" y="499"/>
+        </view>
+        <tapGestureRecognizer id="ICG-yJ-gjY">
+            <connections>
+                <action selector="clickToFoodImage:" destination="-1" id="wx3-Dl-x0h"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="YLe-hN-gWz">
+            <connections>
+                <action selector="clickToBgView:" destination="-1" id="lWd-hY-qIs"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,196 @@
+//
+//  MNLoginViewCtrl.m
+//  Movnow
+//
+//  Created by LiuX on 15/4/15.
+//  Copyright (c) 2015年 HelloWorld. All rights reserved.
+//
+
+#import "MNLoginViewCtrl.h"
+#import "MNUserService.h"
+#import "MNUserKeyChain.h"
+#import "MNRegisterViewCtrl.h"
+#import "MNForgetPwdViewCtrl.h"
+#import "MNUserInfoViewCtrl.h"
+
+@interface MNLoginViewCtrl ()<UITextFieldDelegate>
+
+/**
+ *  背景图片
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *LBgImageView;
+/**
+ *  邮箱图标
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *LEmailIconView;
+/**
+ *  密码图标
+ */
+@property (weak, nonatomic) IBOutlet UIImageView *LPwdIconView;
+/**
+ *  邮箱输入框
+ */
+@property (weak, nonatomic) IBOutlet UITextField *LEmailTF;
+/**
+ *  密码输入框
+ */
+@property (weak, nonatomic) IBOutlet UITextField *LPwdTF;
+/**
+ *  登陆按钮
+ */
+@property (weak, nonatomic) IBOutlet UIButton *LLoginBtn;
+/**
+ *  忘记密码按钮
+ */
+@property (weak, nonatomic) IBOutlet UIButton *LForgetPwdBtn;
+/**
+ *  注册按钮
+ */
+@property (weak, nonatomic) IBOutlet UIButton *LRegisterBtn;
+/**
+ *  编辑视图与底部的距离
+ */
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *LEditViewBottomSpace;
+/**
+ *  当前键盘的高度
+ */
+@property (nonatomic,assign) CGFloat LCurrentKbHeight;
+/**
+ *  返回按钮的文字
+ */
+@property (nonatomic,copy) NSString *backItemText;
+
+@end
+
+@implementation MNLoginViewCtrl
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+    [self loaclOperation];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self resetImages];
+    
+    [self executeDefaultSetting];
+}
+
+#pragma mark - 返回按钮文字
+- (NSString *)backBarItemText
+{
+    return NSLocalizedString(_backItemText,nil);
+}
+
+#pragma mark - 默认配置
+- (void)executeDefaultSetting
+{
+    //将最后一次登陆的邮箱展示出来
+    if ([MNUserKeyChain readUserName]) {
+        self.LEmailTF.text = [MNUserKeyChain readUserName];
+    }
+    
+    //键盘默认高度
+    _LCurrentKbHeight = 216.f;
+}
+
+#pragma mark - 本地化操作
+- (void)loaclOperation
+{
+    self.LEmailTF.attributedPlaceholder = [[NSAttributedString alloc]initWithString:NSLocalizedString(@"请输入邮箱账号",nil) attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.LPwdTF.attributedPlaceholder = [[NSAttributedString alloc]initWithString:NSLocalizedString(@"密码", nil) attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    [self.LLoginBtn setTitle:NSLocalizedString(@"登陆", nil) forState:UIControlStateNormal];
+    [self.LForgetPwdBtn setTitle:NSLocalizedString(@"忘记密码?", nil) forState:UIControlStateNormal];
+    [self.LRegisterBtn setTitle:NSLocalizedString(@"新用户?", nil) forState:UIControlStateNormal];
+    
+    if ([[MNLanguageService shareInstance] getCurrentLanguage] == CurrentLanguageTypeEnglish) {
+        self.LForgetPwdBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        self.LRegisterBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+    }
+}
+
+#pragma mark - 重设图片
+- (void)resetImages
+{
+    [self.LBgImageView setImage:[UIImage imageNamed:IMAGE_NAME(@"login_background.jpg")]];
+    [self.LEmailIconView setImage:[UIImage imageNamed:IMAGE_NAME(@"login_user")]];
+    [self.LPwdIconView setImage:[UIImage imageNamed:IMAGE_NAME(@"login_password")]];
+    [self.LLoginBtn setBackgroundImage:[UIImage imageNamed:IMAGE_NAME(@"btn_login")] forState:UIControlStateNormal];
+    [self.LLoginBtn setBackgroundImage:[UIImage imageNamed:IMAGE_NAME(@"btn_login_press")] forState:UIControlStateHighlighted];
+}
+
+#pragma mark - 登陆按钮点击事件
+- (IBAction)loginBtnClick:(UIButton *)sender
+{
+    
+    [[MNUserService shareInstance] loginWithEmail:self.LEmailTF.text passWord:self.LPwdTF.text success:^(id result) {
+        
+        [self.view endEditing:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
+
+    } failure:^(id reason) {
+        [self.view showHUDWithStr:NSLocalizedString(reason,nil) hideAfterDelay:kAlertWordsInterval];
+    }];
+    
+}
+
+#pragma mark - 忘记密码按钮点击事件
+- (IBAction)forgetPwdBtnClick:(UIButton *)sender
+{
+    
+    _backItemText = NSLocalizedString(@"忘记密码", nil);
+    [self setUpBackBarItem];
+    
+    [self.navigationController pushViewController:[[MNForgetPwdViewCtrl alloc] initWithNibName:@"MNForgetPwdViewCtrl" bundle:nil] animated:YES];
+}
+
+#pragma mark - 注册按钮点击事件
+- (IBAction)registerBtnClick:(UIButton *)sender
+{
+
+    
+    _backItemText = NSLocalizedString(@"注册", nil);
+    [self setUpBackBarItem];
+    
+    MNRegisterViewCtrl *registerVC = [[MNRegisterViewCtrl alloc]initWithNibName:@"MNRegisterViewCtrl" bundle:nil];
+    //注册成功之后的回调
+    registerVC.getAccount = ^(NSString *email,NSString *pwd){
+        self.LEmailTF.text = email;
+        self.LPwdTF.text = pwd;
+        
+        [U_DEFAULTS setObject:@"1" forKey:IS_REGISTER_JUSTNOW];
+        [U_DEFAULTS synchronize];
+    };
+    
+    [self.navigationController pushViewController:registerVC animated:YES];
+    
+}
+
+#pragma mark - 点击背景图片结束编辑状态
+- (IBAction)clickToBgImageView:(UITapGestureRecognizer *)sender
+{
+    [self.view endEditing:YES];
+}
+
+#pragma mark - UITextFieldDelegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    self.LEditViewBottomSpace.constant = _LCurrentKbHeight + 20;
+    [UIView animateWithDuration:kAnimationInterval animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    self.LEditViewBottomSpace.constant = 20;
+    [UIView animateWithDuration:kAnimationInterval animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}
+
+@end

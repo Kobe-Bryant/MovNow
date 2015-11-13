@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/wkl_ios_rep/!svn/ver/3002/Q3/trunk/Movnow/Src/Core/NetWork
+END
+MNetWorkStatus.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/wkl_ios_rep/!svn/ver/2752/Q3/trunk/Movnow/Src/Core/NetWork/MNetWorkStatus.h
+END
+MNUserNetManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wkl_ios_rep/!svn/ver/2800/Q3/trunk/Movnow/Src/Core/NetWork/MNUserNetManager.h
+END
+MNetManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wkl_ios_rep/!svn/ver/3002/Q3/trunk/Movnow/Src/Core/NetWork/MNetManager.h
+END
+MNetWorkStatus.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/wkl_ios_rep/!svn/ver/2776/Q3/trunk/Movnow/Src/Core/NetWork/MNetWorkStatus.m
+END
+MNUserNetManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/wkl_ios_rep/!svn/ver/2850/Q3/trunk/Movnow/Src/Core/NetWork/MNUserNetManager.m
+END
+MNetManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/wkl_ios_rep/!svn/ver/3002/Q3/trunk/Movnow/Src/Core/NetWork/MNetManager.m
+END

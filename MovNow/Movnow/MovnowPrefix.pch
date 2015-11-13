@@ -1,0 +1,31 @@
+//
+//  MovnowPrefix.pch
+//  Movnow
+//
+//  Created by HelloWorld on 15/4/13.
+//  Copyright (c) 2015年 HelloWorld. All rights reserved.
+//
+
+#ifndef Movnow_MovnowPrefix_pch
+#define Movnow_MovnowPrefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UUChart.h"
+#import "UIView+ShowHUD.h"
+#import "UIButton+WebCache.h"
+#import "UIImageView+WebCache.h"
+#import "NSDate+Expend.h"
+#import "MNLanguageService.h"
+#import "MNBaseNavigationCtrl.h"
+#import "MNLoginViewCtrl.h"
+#import "MovnowHeader.h"
+
+
+
+#define __APP ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define PICKERBEGINSCROLL @"pickerBeginScroll"
+#define PICKERENDSCROLL @"pickerEndScroll"
+
+#endif

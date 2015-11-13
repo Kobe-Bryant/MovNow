@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/wkl_ios_rep/!svn/ver/3205/Q3/trunk/Movnow/Src/UI/Controller/Login
+END
+MNRegisterViewCtrl.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/wkl_ios_rep/!svn/ver/2836/Q3/trunk/Movnow/Src/UI/Controller/Login/MNRegisterViewCtrl.xib
+END
+MNPwdResetSuccessViewCtrl.xib
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/wkl_ios_rep/!svn/ver/2872/Q3/trunk/Movnow/Src/UI/Controller/Login/MNPwdResetSuccessViewCtrl.xib
+END
+MNRegisterViewCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/wkl_ios_rep/!svn/ver/2805/Q3/trunk/Movnow/Src/UI/Controller/Login/MNRegisterViewCtrl.h
+END
+MNPwdResetSuccessViewCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/wkl_ios_rep/!svn/ver/2816/Q3/trunk/Movnow/Src/UI/Controller/Login/MNPwdResetSuccessViewCtrl.h
+END
+MNRegisterViewCtrl.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/wkl_ios_rep/!svn/ver/3083/Q3/trunk/Movnow/Src/UI/Controller/Login/MNRegisterViewCtrl.m
+END
+MNPwdResetSuccessViewCtrl.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/wkl_ios_rep/!svn/ver/2872/Q3/trunk/Movnow/Src/UI/Controller/Login/MNPwdResetSuccessViewCtrl.m
+END
+MNForgetPwdViewCtrl.xib
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/wkl_ios_rep/!svn/ver/2887/Q3/trunk/Movnow/Src/UI/Controller/Login/MNForgetPwdViewCtrl.xib
+END
+MNProtocolViewCtrl.xib
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/wkl_ios_rep/!svn/ver/2836/Q3/trunk/Movnow/Src/UI/Controller/Login/MNProtocolViewCtrl.xib
+END
+MNForgetPwdViewCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/wkl_ios_rep/!svn/ver/2820/Q3/trunk/Movnow/Src/UI/Controller/Login/MNForgetPwdViewCtrl.h
+END
+MNProtocolViewCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/wkl_ios_rep/!svn/ver/2785/Q3/trunk/Movnow/Src/UI/Controller/Login/MNProtocolViewCtrl.h
+END
+MNLoginViewCtrl.xib
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/wkl_ios_rep/!svn/ver/3083/Q3/trunk/Movnow/Src/UI/Controller/Login/MNLoginViewCtrl.xib
+END
+MNForgetPwdViewCtrl.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/wkl_ios_rep/!svn/ver/3083/Q3/trunk/Movnow/Src/UI/Controller/Login/MNForgetPwdViewCtrl.m
+END
+MNProtocolViewCtrl.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/wkl_ios_rep/!svn/ver/3083/Q3/trunk/Movnow/Src/UI/Controller/Login/MNProtocolViewCtrl.m
+END
+MNLoginViewCtrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wkl_ios_rep/!svn/ver/2783/Q3/trunk/Movnow/Src/UI/Controller/Login/MNLoginViewCtrl.h
+END
+MNLoginViewCtrl.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/wkl_ios_rep/!svn/ver/3205/Q3/trunk/Movnow/Src/UI/Controller/Login/MNLoginViewCtrl.m
+END

@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; highlightedTitle = " "; ObjectID = "W2W-HS-vQu"; */
+"W2W-HS-vQu.highlightedTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "Sedentary period set"; ObjectID = "Xgc-xd-n9S"; */
+"Xgc-xd-n9S.normalTitle" = "Sedentary period set";
+
+/* Class = "UIButton"; normalTitle = "Please select remind interval"; ObjectID = "YrX-aQ-Zku"; */
+"YrX-aQ-Zku.normalTitle" = "Please select remind interval";
+
+/* Class = "UILabel"; text = "Please select"; ObjectID = "fgn-23-usK"; */
+"fgn-23-usK.text" = "Please select";
+
+/* Class = "UILabel"; text = "In order to avoid to disturb you rest, it is recommended that sedentary reminded to avoid periods of sleep.                                                             After opening  a reminder of sedentary , your device will increase power consumption. "; ObjectID = "uio-P4-1a1"; */
+"uio-P4-1a1.text" = "In order to avoid to disturb you rest, it is recommended that sedentary reminded to avoid periods of sleep.                                                             After opening  a reminder of sedentary , your device will increase power consumption. ";
